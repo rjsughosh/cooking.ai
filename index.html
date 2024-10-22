@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dish Selector</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script src="https://kit.fontawesome.com/26dc678dbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>What Should I Cook?</h1>
+        <div class="button-group">
+            <div class="category-group">
+                <button id="riceButton">Pick a Rice Dish</button>
+                <button id="riceViewAllButton" class="viewAll" data-category="rice"><i class="fas fa-eye"></i></button>
+            </div>
+            <div class="category-group">
+                <button id="chapathiButton">Pick a Chapathi Dish</button>
+                <button id="chapathiViewAllButton" class="viewAll" data-category="chapathi"><i class="fas fa-eye"></i></button>
+            </div>
+            <div class="category-group">
+                <button id="otherButton">Pick Another Dish</button>
+                <button id="otherViewAllButton" class="viewAll" data-category="other"><i class="fas fa-eye"></i></button>
+            </div>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="dishModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>List of dishes</h2>
+            <ul id="dishList"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
